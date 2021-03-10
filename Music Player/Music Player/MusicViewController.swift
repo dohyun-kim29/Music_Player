@@ -8,7 +8,7 @@
 import UIKit
 
 class MusicViewController: UIViewController {
-
+    
     @IBOutlet weak var musicTableView: UITableView!
     
     let musicArr = ["파티피플","너무해","FedexxGirl"]
@@ -21,8 +21,8 @@ class MusicViewController: UIViewController {
         musicTableView.dataSource = self
         
     }
-
-
+    
+    
 }
 
 extension MusicViewController: UITableViewDelegate, UITableViewDataSource {
@@ -45,6 +45,16 @@ extension MusicViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        musicTableView.deselectRow(at: indexPath, animated: true)
+        
+        let position = indexPath.row
+        
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "MusicDetailViewController") as? MusicDetailViewController else { return }
+        
+        viewController.position = position
+        viewController.musicArr = musicArr
+    }
 }
 
