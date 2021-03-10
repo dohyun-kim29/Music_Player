@@ -11,7 +11,7 @@
         <!--Music View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MusicViewController" customModule="Music_Player" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MusicViewController" id="BYZ-38-t0r" customClass="MusicViewController" customModule="Music_Player" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="529" y="105"/>
+        </scene>
+        <!--Music Detail View Controller-->
+        <scene sceneID="snb-gw-qCD">
+            <objects>
+                <viewController storyboardIdentifier="MusicDetailViewController" id="ula-Mf-Igx" customClass="MusicDetailViewController" customModule="Music_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bq-JF-ahQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="f5d-ea-I4K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLd-1I-NPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="105"/>
         </scene>
     </scenes>
     <resources>
